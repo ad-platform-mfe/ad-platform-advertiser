@@ -1,0 +1,13 @@
+.tableContainer {
+  background: var(--card-background);
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color-base);
+}
+
+.tableTitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Statistic } from 'antd'
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons'
-import styles from './DataCard.module.css'
+import styles from './DataCard.module.less'
 
 interface DataCardProps {
   title: string

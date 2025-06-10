@@ -1,11 +1,35 @@
-import './App.css'
+import React from 'react'
+import { Breadcrumb, Layout, theme } from 'antd'
+import Dashboard from './pages/Dashboard'
 
-function App() {
+const { Content } = Layout
+
+const App: React.FC = () => {
+  const {
+    token: { colorBgContainer, borderRadiusLG }
+  } = theme.useToken()
 
   return (
-    <>
-      <h1>广告主投放平台</h1>
-    </>
+    <Layout style={{ minHeight: '100vh' }}>
+      <Layout>
+        <Content style={{ margin: '0 16px' }}>
+          <Breadcrumb style={{ margin: '16px 0' }}>
+            <Breadcrumb.Item>首页</Breadcrumb.Item>
+            <Breadcrumb.Item>概览</Breadcrumb.Item>
+          </Breadcrumb>
+          <div
+            style={{
+              padding: 24,
+              minHeight: 360,
+              background: colorBgContainer,
+              borderRadius: borderRadiusLG
+            }}
+          >
+            <Dashboard />
+          </div>
+        </Content>
+      </Layout>
+    </Layout>
   )
 }
 

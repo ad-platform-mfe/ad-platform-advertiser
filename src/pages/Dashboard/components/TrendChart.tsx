@@ -9,7 +9,7 @@ import {
   Legend,
   ResponsiveContainer
 } from 'recharts'
-import styles from './TrendChart.module.css'
+import styles from './TrendChart.module.less'
 
 const data = [
   { name: '06-01', 花费: 4000, 展示量: 2400 },

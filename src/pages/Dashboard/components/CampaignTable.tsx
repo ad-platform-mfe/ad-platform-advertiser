@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table, Tag, Space, Button } from 'antd'
 import type { TableProps } from 'antd'
-import styles from './CampaignTable.module.css'
+import styles from './CampaignTable.module.less'
 
 interface DataType {
   key: string

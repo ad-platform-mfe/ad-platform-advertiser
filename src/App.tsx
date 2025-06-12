@@ -13,10 +13,10 @@ const App: React.FC = () => {
     <Layout style={{ minHeight: '100vh' }}>
       <Layout>
         <Content style={{ margin: '0 16px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>首页</Breadcrumb.Item>
-            <Breadcrumb.Item>概览</Breadcrumb.Item>
-          </Breadcrumb>
+          <Breadcrumb
+            style={{ margin: '16px 0' }}
+            items={[{ title: '首页' }, { title: '概览' }]}
+          />
           <div
             style={{
               padding: 24,
